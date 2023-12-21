@@ -4,6 +4,7 @@
         box-sizing: border-box;
         overflow: hidden;
         margin: 0 auto;
+        background: #131313;;
     }
     body {
         max-width: 50em;
