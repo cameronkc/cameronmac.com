@@ -16,6 +16,10 @@
         align-items: center;
         padding-top: 1em;
     }
+
+    .navLogo {
+        color: #ffffffe3
+    }
     .navList {
         font-weight: 100;
         display: flex;
