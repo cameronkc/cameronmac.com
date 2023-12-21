@@ -9,6 +9,9 @@
         max-width: 45rem;
         padding: 1rem;
     }
+    .main h1 {
+        color: #ffffffe3
+    }
     .tag {
         color:#f1f1f1a4
     }
