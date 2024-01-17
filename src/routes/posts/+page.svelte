@@ -1,3 +1,14 @@
-<h1>Posts</h1>
+<script lang="ts">
+    import type { LayoutData } from "./$types";
 
-<p>brows posts here.</p>
+    export let data: LayoutData
+
+</script>
+<div>
+    {#each data.posts as {title, content, Id}}
+        {#if Id > data.posts.length - 1}
+            <h1>{title}</h1>
+            <p>{content}</p>
+        {/if}
+    {/each}
+</div>

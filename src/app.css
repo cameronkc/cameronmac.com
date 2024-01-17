@@ -1,6 +1,11 @@
-
+*
+{
+    box-sizing: border-box;
+}
 body {
     padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
 }
 
 h1 {

@@ -5,10 +5,12 @@ export const load: LayoutServerLoad = async (event) =>
 {
     const posts = await db.post.findMany({
         select: {
+            Id: true,
             title: true,
-            slug: true
+            slug: true,
+            content: true
         },
-        take: 8
+        take: 4
     })
     return { posts }
 }

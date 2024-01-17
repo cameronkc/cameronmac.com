@@ -27,7 +27,7 @@
 
 	.layout {
 		display: grid;
-		grid-template-columns: 10rem 40rem;
+		grid-template-columns: 200px minmax(auto, 60ch);
 		gap: 4rem;
 		margin-top: 2rem;
 	}
