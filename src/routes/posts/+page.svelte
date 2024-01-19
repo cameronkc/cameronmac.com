@@ -3,9 +3,10 @@
 
     export let data: LayoutData
 
+
 </script>
 <div>
-    {#each data.posts as {title, content, Id}}
+    {#each data.posts as {title, content, Id }}
         {#if Id > data.posts.length - 1}
             <h1>{title}</h1>
             <p>{content}</p>

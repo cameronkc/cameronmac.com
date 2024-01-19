@@ -8,7 +8,8 @@ export const load: LayoutServerLoad = async (event) =>
             Id: true,
             title: true,
             slug: true,
-            content: true
+            content: true,
+            createdAt: true
         },
         take: 4
     })
