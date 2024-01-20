@@ -1,12 +1,5 @@
 <script lang="ts">
 	import type { LayoutData } from './$types'
-	/*
-		{#each data.posts as { slug, title }}
-					<li>
-						<a href="/posts/{slug}">{title}</a>
-					</li>
-				{/each}
-	*/
 	export let data: LayoutData
 </script>
 
@@ -16,15 +9,19 @@
 			<slot />
 		</main>
 	</article>
-	<aside class="side">
-		{#each data.posts as { slug, title }}
-			<li>
-				<a href="/posts/{slug}">{title}</a>
-			</li>
-		{/each}
-	</aside>
-	<div class="ad">Advertising</div>
-	<footer class="main-footer">Footer</footer>
+	<article>
+		<aside class="side">
+			{#each data.posts as { slug, title }}
+				<li>
+					<i><a href="/posts/{slug}">{title}</a></i>
+				</li>
+			{/each}
+		</aside>
+	</article>
+	<div class="ad"></div>
+	<footer class="main-footer">
+		<i>cameron mac</i>
+	</footer>
 </div>
 
 <style>
@@ -55,25 +52,21 @@
 		grid-area: footer;
 	}
 
-	@media (min-width: 500px) {
+	@media (min-width: 900px) {
 		.wrapper {
 			grid-template-columns: 1fr 3fr;
 			grid-template-areas:
 				'sidebar content'
 				'ad      footer';
 		}
+
+		.side {
+
+		}
 	}
 	.content {
 		margin-bottom: 2rem;
 	}
 
-	@media (min-width: 700px) {
-		.wrapper {
-			grid-template-columns: 1fr 3fr;
-			grid-template-areas:
-				'content sidebar'
-				'content ad'
-				'footer footer footer';
-		}
-	}
+
 </style>

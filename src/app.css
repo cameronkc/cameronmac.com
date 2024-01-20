@@ -6,9 +6,17 @@
 body {
     padding: 2rem;
     margin: 0 auto;
+    max-width: 80%;
 }
 
 h1 {
     line-height: 1;
     text-transform: capitalize;
+}
+
+
+@media (max-width: 500px) {
+    body {
+        max-width: 100%;
+    }
 }

@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>{$page.data.post?.title}</title>
+	<title>{$page.data.post?.title || 'cameronmac'}</title>
 </svelte:head>
 <nav>
 	<ul>

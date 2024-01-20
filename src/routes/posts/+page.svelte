@@ -5,6 +5,8 @@
 
 
 </script>
+
+<!-- Displays most recent blog post -->
 <div>
     {#each data.posts as {title, content, Id }}
         {#if Id > data.posts.length - 1}
